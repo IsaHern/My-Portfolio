@@ -1,0 +1,343 @@
+:root {
+
+    --light-blue: #11c1c1;
+    --gray: #6521aa;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    background-color: rgb(107, 16, 134);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: var(--gray);
+    min-height: fit-content;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    background-color: var(--light-blue);
+    padding: 10px 10px 10px 50px;
+    color: var(--gray);
+    border-radius: 10px;
+}
+
+.header nav {
+    float: right;
+    justify-content: space-between;
+    margin-right: 50px;
+    font-size: larger;
+    max-width: 200rem;
+}
+
+nav ul {
+    list-style-type: none;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+nav li {
+    display: inline-flex;
+    padding-right: 20px;
+}
+
+.header nav a {
+    color: var(--light-blue);
+    text-decoration: none;
+    border-bottom: 3px solid;
+    padding-bottom: 2px;
+}
+
+.background-image {
+    background-image: url(./images/Background-image-1.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 250px;
+    max-width: 200rem;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    background-color: var(--light-blue);
+    display: flex;
+    width: fit-content;
+    float: right;
+    font-size: 200%;
+    color: var(--gray);
+    margin-right: 50px;
+    margin-top: 185px;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.about-me-content {
+    display: inline-block;
+    margin-right: 80px;
+}
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 90%;
+}
+
+.first-section-title {
+    position: relative;
+    color: var(--gray);
+    font-size: 175%;
+    padding-right: 20px;
+    inline-size: min-content;
+    text-align: right;
+    margin-right: 40px;
+}
+
+.first-section-title h2 {
+    font-size: 200%;
+    float: inline-start;
+}
+
+.first-section-title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4px;
+    bottom: 0;
+    background-color: var(--gray);
+}
+
+.about-me-content p {
+    line-height: 1.5;
+
+}
+
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    max-width: 90%;
+}
+
+.second-section-title {
+    position: relative;
+    display: flex;
+    color: var(--gray);
+    font-size: 100%;
+    padding-right: 20px;
+    inline-size: min-content;
+    margin-right: 40px;
+}
+
+.second-section-title h2 {
+    font-size: 4rem;
+}
+
+.second-section-title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4px;
+    bottom: 0;
+    background-color: var(--gray);
+}
+
+.large-image {
+    flex-basis: 100%;
+    text-align: center;
+    margin-left: 15px;
+    max-width: 90%;
+    height: auto;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.large-image img {
+    border: 7px solid var(--light-blue);
+
+}
+
+#large {
+    filter: brightness(25%);
+    transition: filter 0.5s ease;
+    max-width: 910px;
+}
+
+#large:hover {
+    filter: brightness(100%);
+}
+
+.label1 {
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+    background-color: var(--light-blue);
+    color: var(--gray);
+    font-size: 2rem;
+    padding: 10px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.label2 {
+    position: absolute;
+    background-color: var(--light-blue);
+    color: var(--gray);
+    font-size: 2rem;
+    padding: 10px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 30px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-basis: 51%;
+    margin-top: 20px;
+    max-width: 100%;
+    position: relative;
+}
+
+.small-image {
+    flex-basis: 50%;
+    text-align: center;
+    margin-left: 15px;
+    max-width: 455px;
+    min-height: 500px;
+    position: relative;
+}
+
+.small-image img {
+    border: 7px solid var(--light-blue);
+    filter: brightness(25%);
+    transition: filter 0.5s ease;
+    width: 445px;
+    height: 500px;
+
+
+}
+
+.small-image img:hover {
+    filter: brightness(100%);
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    max-width: 100%;
+}
+
+.contact-me {
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    max-width: 90%;
+    margin-bottom: 50px;
+}
+
+.third-section-title {
+    position: relative;
+    color: var(--gray);
+    font-size: 175%;
+    padding-right: 20px;
+    inline-size: min-content;
+    text-align: right;
+    margin-right: 30px;
+}
+
+.third-section-title h2 {
+    font-size: 200%;
+}
+
+.third-section-title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4px;
+    bottom: 0;
+    background-color: var(--gray);
+}
+
+.contact-info {
+    margin: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 90%;
+}
+
+.contact-info a {
+    text-decoration: none;
+    font-size: larger;
+    border-bottom: 4px solid;
+    padding-bottom: 4px;
+    margin-right: 30px;
+    margin-left: 30px;
+    color: var(--gray);
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .header,
+    .header nav,
+    .work,
+    .row,
+    .second-section-title,
+    .label1,
+    .label2,
+    .contact-me,
+    .contact-info,
+    #large,
+    .small {
+        flex-direction: column;
+        column-count: 1;
+        position: relative;
+    }
+
+    .second-section-title {
+        margin-bottom: 50px;
+        align-items: center;
+    }
+
+    .contact-me,
+    .contact-info {
+        flex-direction: column;
+        column-count: 1;
+        flex-wrap: wrap;
+        padding: 10px;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    #large,
+    .small {
+        width: 85%;
+    }
+
+    .label1,
+    .label2 {
+        width: fit-content;
+    }
+}
