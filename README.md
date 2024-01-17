@@ -10,6 +10,8 @@ N/A, This webpage is hosted by Github Pages.
 
 ## Usage
 
+![Screnshot of portfolio.](./assets/images/Portfolio%20Screenshot.png)
+
 Link to deployed site:
 
 https://isahern.github.io/My-Portfolio/
